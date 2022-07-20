@@ -1,3 +1,5 @@
+//this is a small change to test the -a flag in git, which ignores the staging pen
+
 const express = require('express'); //require('express') is a function object. app returns 
 // const app = require('express')(); //we don't do this because we also need to reference 
 // properties part of the express object. we can combine it to one line if we only plan 
