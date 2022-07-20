@@ -1,0 +1,7 @@
+/node_modules
+.DS_Store
+pnpm
+pnpm-lock.yaml
+package-lock.json
+package.json
+clients/assets/RobotoMono-VariableFont_wght.ttf

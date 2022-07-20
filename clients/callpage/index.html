@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <!-- <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+    integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+    crossorigin="anonymous"></script> -->
+  <script src="https://cdn.socket.io/4.5.0/socket.io.min.js"
+    integrity="sha384-7EyYLQZgWBi67fBtVxw60/OWl1kjsfrPFcaU0pp0nAh+i8FD068QogUvg85Ewy1k"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/peerjs@1.4.5/dist/peerjs.min.js"></script>
+  <script src="client.js"></script>
+
+
+</head>
+
+<body id="body" style="padding-left: 0px; padding-right: 0px;">
+  <header id="header" style="padding-left: 16vw; padding-right: 18vw;">
+    <img id="logo" src="logo.png" onClick="location.href = '/'">
+    <div id="link-container">
+      <a href="/" class="link text2 selected">call</a>
+      <a href="/" class="link text2">settings</a>
+      <a href="/" class="link text2">about</a>
+    </div>
+  </header>
+  <div id="outer-lower-container">
+    <div id="lower-container">f
+      <div style="width: 95%" id="video-container">
+        <div style=" max-width: none; display: none; width: 100%" id="novideo">
+        </div>
+
+      </div>
+
+      <div id="videocontrols" style="display: none;">
+        <button id="microphone" onclick="toggleSelected(microphone)" class="circle">
+          <img style="width: 25px; margin-top: 3px;" id="" src="microphone.svg">
+        </button>
+        <button id="chat" class="circle">
+          <img style="width: 25px; margin-top: 3px;" src="chatbubble.svg">
+        </button>
+        <button style="background-color: #FF007A;" class="circle">
+          <img style="width: 30px; margin-top: 5px;" src="brokenheart.svg">
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
