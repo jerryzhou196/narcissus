@@ -16,7 +16,6 @@ function createVideoStream(stream){
         video.play();
     })
     console.log(video);
-    sleep(1)
 }
 
 function sleep(ms) {
@@ -76,10 +75,7 @@ window.addEventListener("load", () => {
                 createVideoStream(client_stream);
             });
         });
-
     })
-
-
 });
 
 

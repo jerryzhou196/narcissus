@@ -14,9 +14,6 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
-
-
 window.addEventListener("load", () => {
     
     navigator.mediaDevices
