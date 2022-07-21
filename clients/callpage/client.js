@@ -64,7 +64,7 @@ window.addEventListener("load", () => {
             });
         });
 
-        socket.on("fuck-off", ()=>{
+        socket.on("goodbye", ()=>{
             console.log("someone left");
         })
 

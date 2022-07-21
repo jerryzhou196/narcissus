@@ -14,7 +14,7 @@ const io = require("socket.io")(server, {
       origin: '*'
     }
 });
-const {v4: uniqueID} = require("/Users/jz/Desktop/narcissus-v2/node_modules/uuid/dist/index");
+const {v4: uniqueID} = require("uuid");
 // const { ExpressPeerServer } = require("peer");
 // const peerServer = ExpressPeerServer(server, {
 //   debug: true,
@@ -26,10 +26,6 @@ app.use("/:room", express.static("clients/assets"));
 app.use("/:room", express.static("clients/homepage"));
 app.use("/:room/call_page", express.static("clients/callpage"));
 app.use("/:room/call_page", express.static("clients/assets"));
-
-
-
-
 
 app.get('/', (req, res) => {
     res.redirect(`/${uniqueID()}`);
@@ -53,7 +49,7 @@ io.on("connection", (socket) => {
 
     socket.on("disconnect", () =>{
         lovers.splice(lovers.indexOf(socket), 1);
-        io.emit("fuck-off");
+        io.emit("goodbye");
         console.log(`peer connection left. total: ${lovers.length}`);
     })
 })
